@@ -1,6 +1,13 @@
 @import "variables";
 
 .site_header {
+    @include flex_row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: var(--base-padding);
+    margin-left: var(--base-margin);
+    margin-right: var(--base-margin);
+    padding-bottom: calc(var(--base-padding) + 8px);
     & .site_header__heading {
         & a {
             background-image: url('../images/icon-messages.svg');

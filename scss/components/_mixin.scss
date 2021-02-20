@@ -19,8 +19,8 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: calc((var(--base-font-size) * 2.5));
-    line-height: calc((var(--base-line-height) * 2));
+    font-size: calc((var(--base-font-size) * 2));
+    line-height: calc((var(--base-line-height) * 1.5));
     color: var(--sub-heading-color);
 }
 
@@ -60,3 +60,35 @@
     line-height: calc((var(--base-line-height) * 2.5));
     color: var(--sub-heading-color);
 }
+
+@mixin marg_padd_none {
+    margin: 0;
+    padding: 0;
+}
+
+%padding_margin {
+    @include marg_padd_none;
+}
+
+@mixin ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @mixin text_indent {
+    display: block;
+    text-indent: -9999px;
+  }
+  
+  @mixin flex_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  @mixin flex_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
