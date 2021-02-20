@@ -1,0 +1,49 @@
+@import "variables";
+
+.comment {
+    padding-bottom: var(--base-padding);
+    & .comment_lists {
+        padding-top: calc(var(--base-padding) * 2);
+        & li:first-child {
+            & p a {
+                @include text_ident;
+                background-image: url('../images/icon-communities.svg');
+                background-repeat: no-repeat;
+                background-position: 35% 50%;
+                background-size: 1.5rem;
+            }
+        }
+        & li:last-child {
+            padding-top: calc(var(--base-padding) + 20px);
+            & p a {
+                @include text_ident;
+                background-image: url('../images/icon-messages.svg');
+                background-repeat: no-repeat;
+                background-position: 35% 50%;
+                background-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .comment {
+        & .comment_image_container {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        & .comment_lists {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+           @include flex_row;
+        //     & li:first-child {
+                
+        //     }
+            & li:last-child {
+                padding-top: unset;
+        }
+        }
+    }
+}

@@ -109,3 +109,8 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @mixin text_ident {
+      display: block;
+      text-indent: -9999px;
+  }

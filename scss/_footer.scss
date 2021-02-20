@@ -1,0 +1,11 @@
+@import "variables";
+
+.footer {
+    background-color: var(--sub-heading-color);  
+    & .contact {
+        color: var(--btn-color);
+    } 
+    & .newsletter {
+        color: var(--btn-color);
+    }
+}

@@ -1,0 +1,12 @@
+@import "variables";
+
+.ready {
+    padding-top: calc(var(--base-padding) * 2);
+    padding-bottom: calc(var(--base-padding) * 3);
+    & .ready_heading {
+        padding-bottom: var(--base-padding);
+    }
+    & .ready_button {
+        border-radius: 50px;
+    }
+}

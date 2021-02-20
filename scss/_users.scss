@@ -1,0 +1,35 @@
+@import "variables";
+
+.users {
+    padding-top: calc(var(--base-padding) * 3.3);
+    padding-bottom: calc(var(--base-padding) * 4);
+    background-image: url('../images/bg-section-bottom-mobile-2.svg'), url('../images/bg-section-top-mobile-2.svg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 50% 105%, 50% 0%;
+    & .users_heading {
+        padding-top: calc(var(--base-padding) * 2);
+    }
+    & .users_paragraph {
+        padding-top: var(--base-padding);
+    }
+}
+
+@media (min-width: 1000px) {
+    .users {
+        background-image: url('../images/bg-section-bottom-desktop-2.svg'), url('../images/bg-section-top-desktop-2.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 105%, 50% 0%;
+        & .users_container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            & div:last-child {
+                max-width: 500px;
+                text-align: start;
+            }
+        }
+    }
+}
