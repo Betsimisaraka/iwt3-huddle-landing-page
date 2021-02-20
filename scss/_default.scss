@@ -1,0 +1,36 @@
+@import "variables";
+
+html {
+    font-family: $font-stack;
+    font-size: var(--base-font-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.sub_heading {
+    @include sub_heading;
+}
+
+.article_heading {
+    @include article_heading;
+}
+
+.article_paragraph {
+    @include article_paragraph;
+}
+
+.button_for_free {
+    @include btn_free;
+    border: none;
+    padding: 10px 30px;
+}
+
+.comment_number {
+    @include bg_sub_title;
+}

@@ -1,0 +1,9 @@
+:root {
+    --base-font-size: #{$default-font-size};
+    --base-line-height: #{$base-line-height};
+    --bg-color: #{$bg-heading-color};
+    --st-header-color: #{$st-header-color};
+    --sub-heading-color: #{$sub-heading-color};
+    --btn-color: #{$btn-color};
+    --btn-background: #{$btn-background};
+}

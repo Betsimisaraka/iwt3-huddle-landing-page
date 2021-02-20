@@ -1,0 +1,22 @@
+@import "variables";
+
+.site_header {
+    & .site_header__heading {
+        & a {
+            background-image: url('../images/icon-messages.svg');
+            background-repeat: no-repeat;
+            background-position: 0% 50%;
+            background-size: 2rem;
+            @include bg_heading;
+            color: var(--bg-color);
+            padding-left: 2rem;
+        }
+    }
+    & .site_header__button {
+        @include sth_button;
+        border: 2px solid var(--st-header-color);
+        background-color: transparent;
+        border-radius: 50px;
+        padding: 10px 22px;
+    }
+}

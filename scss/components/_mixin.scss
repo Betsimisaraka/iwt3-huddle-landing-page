@@ -1,0 +1,62 @@
+@mixin bg_heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 1.5));
+    line-height: calc((var(--base-line-height) + 8px));
+}
+
+@mixin sth_button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--base-font-size - 2px);
+    line-height: var(--base-line-height - 6px);
+    color: var(--st-header-color);
+}
+
+@mixin sub_heading {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 2.5));
+    line-height: calc((var(--base-line-height) * 2));
+    color: var(--sub-heading-color);
+}
+
+@mixin article_heading {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 1.5));
+    line-height: calc((var(--base-line-height) * 1.5));
+    color: var(--sub-heading-color);
+}
+
+@mixin article_paragraph {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc((var(--base-font-size) + 2px));
+    line-height: calc((var(--base-line-height) + 8px));
+    color: var(--sub-heading-color);
+}
+
+@mixin btn_free {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    color: var(--btn-color);
+    background-color: var(--btn-background);
+}
+
+@mixin bg_sub_title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 3));
+    line-height: calc((var(--base-line-height) * 2.5));
+    color: var(--sub-heading-color);
+}
