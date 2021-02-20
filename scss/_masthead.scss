@@ -1,0 +1,24 @@
+@import "variables";
+
+.masthead {
+    padding-bottom: calc(var(--base-padding) * 3);
+    padding-top: calc(var(--base-padding) * 3);
+    & .masthead_paragraph {
+        padding-top: var(--base-padding);
+        padding-bottom: var(--base-padding);
+    }
+    & .masthead_button {
+        border-radius: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .masthead {
+        padding-bottom: calc(var(--base-padding) * 2);
+        & .masthead_paragraph {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

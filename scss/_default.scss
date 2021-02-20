@@ -46,3 +46,14 @@ body, h1, h2, h3, ul, li, p, div, a {
 article img {
     width: 100%;
 }
+
+.container {
+    margin-left: var(--base-margin);
+    margin-right: var(--base-margin);
+}
+
+@media (min-width: 1000px) {
+    .sub_heading {
+        @include sub_heading_desk;
+    }
+}

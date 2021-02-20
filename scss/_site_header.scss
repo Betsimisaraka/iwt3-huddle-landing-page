@@ -7,7 +7,6 @@
     padding-top: var(--base-padding);
     margin-left: var(--base-margin);
     margin-right: var(--base-margin);
-    padding-bottom: calc(var(--base-padding) + 8px);
     & .site_header__heading {
         & a {
             background-image: url('../images/icon-messages.svg');
@@ -24,6 +23,16 @@
         border: 2px solid var(--st-header-color);
         background-color: transparent;
         border-radius: 50px;
-        padding: 10px 22px;
+        padding: 8px 25px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .site_header {
+        & .site_header__heading {
+            & a {
+                @include bg_heading_desk;
+            }
+        }
     }
 }

@@ -6,6 +6,14 @@
     line-height: calc((var(--base-line-height) + 8px));
 }
 
+@mixin bg_heading_desk {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 2.5));
+    line-height: calc((var(--base-line-height) * 2));
+}
+
 @mixin sth_button {
     font-family: 'Open Sans';
     font-style: normal;
@@ -19,8 +27,17 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: calc((var(--base-font-size) * 2));
+    font-size: calc((var(--base-font-size) + 0.5rem));
     line-height: calc((var(--base-line-height) * 1.5));
+    color: var(--sub-heading-color);
+}
+
+@mixin sub_heading_desk {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc((var(--base-font-size) * 2.5));
+    line-height: calc((var(--base-line-height) * 2));
     color: var(--sub-heading-color);
 }
 
@@ -37,8 +54,8 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: calc((var(--base-font-size) + 2px));
-    line-height: calc((var(--base-line-height) + 8px));
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
     color: var(--sub-heading-color);
 }
 
