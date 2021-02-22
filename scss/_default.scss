@@ -17,7 +17,7 @@ ul {
     list-style: none;
 }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
     @extend %padding_margin;
 }
 
@@ -27,9 +27,15 @@ body, h1, h2, h3, ul, li, p, div, a {
 
 .article_heading {
     @include article_heading;
+    color: var(--sub-heading-color);
 }
 
 .article_paragraph {
+    @include article_paragraph;
+    color: var(--sub-heading-color);
+}
+
+.footer_paragraph {
     @include article_paragraph;
 }
 

@@ -1,4 +1,4 @@
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -50,6 +50,13 @@ ul {
   line-height: var(--base-line-height);
   color: var(--sub-heading-color); }
 
+.footer_paragraph {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height); }
+
 .button_for_free {
   font-family: 'Open Sans';
   font-style: normal;
@@ -89,7 +96,7 @@ article img {
     margin-left: auto;
     margin-right: auto; } }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -104,7 +111,7 @@ body, h1, h2, h3, ul, li, p, div, a {
   --base-margin: 22px;
   --base-padding: 42px; }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -129,17 +136,13 @@ body, h1, h2, h3, ul, li, p, div, a {
   margin-left: var(--base-margin);
   margin-right: var(--base-margin); }
   .site_header .site_header__heading a {
-    background-image: url("../images/icon-messages.svg");
+    background-image: url("../images/logo.svg");
     background-repeat: no-repeat;
     background-position: 0% 50%;
-    background-size: 2rem;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: calc((var(--base-font-size) * 1.5));
-    line-height: calc((var(--base-line-height) + 8px));
-    color: var(--bg-color);
-    padding-left: 2rem; }
+    background-size: 8rem;
+    width: 150px;
+    display: block;
+    text-indent: -9999px; }
   .site_header .site_header__button {
     font-family: 'Open Sans';
     font-style: normal;
@@ -160,7 +163,7 @@ body, h1, h2, h3, ul, li, p, div, a {
     font-size: calc((var(--base-font-size) * 2.5));
     line-height: calc((var(--base-line-height) * 2)); } }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -192,7 +195,7 @@ body, h1, h2, h3, ul, li, p, div, a {
       margin-left: auto;
       margin-right: auto; } }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -243,7 +246,7 @@ body, h1, h2, h3, ul, li, p, div, a {
     .comment .comment_lists li:last-child {
       padding-top: unset; } }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -285,7 +288,7 @@ body, h1, h2, h3, ul, li, p, div, a {
         max-width: 500px;
         text-align: start; } }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -308,7 +311,7 @@ body, h1, h2, h3, ul, li, p, div, a {
   .ready .ready_button {
     border-radius: 50px; }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -340,7 +343,7 @@ body, h1, h2, h3, ul, li, p, div, a {
   .conversations div:last-child {
     text-align: start; } }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -382,7 +385,7 @@ body, h1, h2, h3, ul, li, p, div, a {
         max-width: 500px;
         text-align: start; } }
 
-body, h1, h2, h3, ul, li, p, div, a {
+body, h1, h2, h3, ul, li, p, div, a, fieldset {
   margin: 0;
   padding: 0; }
 
@@ -398,8 +401,69 @@ body, h1, h2, h3, ul, li, p, div, a {
   --base-padding: 42px; }
 
 .footer {
-  background-color: var(--sub-heading-color); }
+  color: var(--btn-color);
+  text-align: start;
+  background-image: url("../images/bg-footer-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: 100% 5%;
+  padding-top: 100px; }
+  .footer .footer_container {
+    background-color: var(--sub-heading-color);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start; }
   .footer .contact {
-    color: var(--btn-color); }
+    margin-left: var(--base-margin);
+    margin-right: var(--base-margin);
+    margin-bottom: calc(var(--base-margin) * 4); }
+    .footer .contact .contact_heading a {
+      display: block;
+      text-indent: -9999px;
+      background-image: url("../images/logo.svg");
+      background-repeat: no-repeat;
+      background-position: 0% 50%;
+      width: 250px;
+      filter: brightness(0) invert(1); }
+    .footer .contact .contact_paragraph {
+      padding-top: 20px;
+      padding-bottom: var(--base-padding); }
+    .footer .contact .contact_phone {
+      background-image: url("../images/icon-phone.svg");
+      background-repeat: no-repeat;
+      background-position: 0% 50%;
+      background-size: 1rem;
+      padding-left: calc(var(--base-padding) - 10px); }
+    .footer .contact .contact_email {
+      background-image: url("../images/icon-email.svg");
+      background-repeat: no-repeat;
+      background-position: 0% 50%;
+      background-size: 1rem;
+      padding-left: calc(var(--base-padding) - 10px);
+      padding-top: calc(var(--base-padding) / 2);
+      padding-bottom: var(--base-padding); }
   .footer .newsletter {
-    color: var(--btn-color); }
+    margin-left: var(--base-margin);
+    margin-right: var(--base-margin);
+    margin-bottom: calc(var(--base-margin) * 4); }
+    .footer .newsletter .newsletter_heading {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: calc((var(--base-font-size) * 1.5));
+      line-height: calc((var(--base-line-height) * 1.5));
+      text-transform: uppercase;
+      padding-bottom: calc(var(--base-padding) / 2); }
+    .footer .newsletter .footer_form fieldset {
+      border: none;
+      text-align: end;
+      margin-top: calc(var(--base-margin) * 2); }
+      .footer .newsletter .footer_form fieldset input {
+        width: 100%;
+        height: 42px;
+        border-radius: 5px;
+        border: none; }
+      .footer .newsletter .footer_form fieldset button {
+        margin-top: calc(var(--base-margin) / 2);
+        border-radius: 5px; }

@@ -9,13 +9,12 @@
     margin-right: var(--base-margin);
     & .site_header__heading {
         & a {
-            background-image: url('../images/icon-messages.svg');
+            background-image: url('../images/logo.svg');
             background-repeat: no-repeat;
             background-position: 0% 50%;
-            background-size: 2rem;
-            @include bg_heading;
-            color: var(--bg-color);
-            padding-left: 2rem;
+            background-size: 8rem;
+            width: 150px;
+            @include text_indent;
         }
     }
     & .site_header__button {
