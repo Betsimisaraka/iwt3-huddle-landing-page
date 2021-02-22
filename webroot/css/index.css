@@ -405,7 +405,7 @@ body, h1, h2, h3, ul, li, p, div, a, fieldset {
   text-align: start;
   background-image: url("../images/bg-footer-top-mobile.svg");
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: 100%;
   background-position: 100% 5%;
   padding-top: 100px; }
   .footer .footer_container {
@@ -467,3 +467,27 @@ body, h1, h2, h3, ul, li, p, div, a, fieldset {
       .footer .newsletter .footer_form fieldset button {
         margin-top: calc(var(--base-margin) / 2);
         border-radius: 5px; }
+
+@media (min-width: 1000px) {
+  .footer {
+    background-image: url("../images/bg-footer-top-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 0%;
+    padding-top: 140px; }
+    .footer .footer_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 100px; }
+    .footer .contact {
+      padding-left: calc(var(--base-padding) * 4);
+      padding-right: calc(var(--base-padding) * 4); }
+    .footer .newsletter {
+      padding-right: calc(var(--base-padding) * 4); }
+      .footer .newsletter .footer_form fieldset {
+        display: flex;
+        flex-direction: row; }
+        .footer .newsletter .footer_form fieldset button {
+          margin-left: calc(var(--base-margin) * 2);
+          margin-top: unset; } }
